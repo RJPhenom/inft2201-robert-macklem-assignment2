@@ -1,3 +1,11 @@
+//
+// Header.jsx
+// Robert Macklem
+// Jul 8 2025
+//
+// A cool looking header for my webapp
+//
+
 export default function Header() {
   return (
     <header className="w-full flex flex-row items-center gap-3 bg-blue-600 text-white text-xl p-5">

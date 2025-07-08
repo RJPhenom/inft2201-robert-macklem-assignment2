@@ -1,0 +1,14 @@
+{
+  "emails": [
+    {
+      "id": 1,
+      "subject": "Meeting Schedule",
+      "body": "Let's meet at 3pm tomorrow."
+    },
+    {
+      "id": 2,
+      "subject": "Project Update",
+      "body": "We're 90% complete on the redesign."
+    }
+  ]
+}
