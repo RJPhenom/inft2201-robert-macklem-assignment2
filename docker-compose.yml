@@ -1,0 +1,19 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - VITE_API_URL=http://localhost:3000/emails
+  api:
+    image: clue/json-server
+    ports:
+      - "3000:80"
+    volumes:
+      - ./emails.json:/data/db.json
+    environment:
+      - JSON_SERVER_DATA=/data/db.json

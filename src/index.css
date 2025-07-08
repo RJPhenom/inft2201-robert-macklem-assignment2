@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+I like Google's Urbanist font, hoping for polish marks! 
+source: https://fonts.google.com/share?selection.family=Urbanist:ital,wght@0,100..900;1,100..900
+*/
+@font-face {
+  font-family: "Urbanist";
+  src: url("./fonts/Urbanist-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("./fonts/Urbanist-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Applies it to everything inside <body> tag */
+body {
+  font-family: "Urbanist", sans-serif;
+}
