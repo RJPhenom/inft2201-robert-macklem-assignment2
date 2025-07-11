@@ -34,7 +34,7 @@ export default function App() {
           setUpdateEmails(false);
           if (selectedEmail) {
             setSelectedEmail(
-              data.find((e) => e.id === selectedEmail.id) || null
+              data.find((e) => e.id === selectedEmail.id) || null // Chcekcs if there is a selected email and re-grabs it if so
             );
           }
         });
